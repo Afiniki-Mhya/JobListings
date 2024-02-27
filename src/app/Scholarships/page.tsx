@@ -8,7 +8,7 @@ function Scholarpage() {
   }
 
   return (
-    <div className=" bg-gradient-to-br from-[#1E2025] via-[#3C5665] to-[#5A7480] min-h-screen text-black font-[Courier] relative flex flex-col justify-center items-center ">
+    <div className=" bg-[#92A4B1] font-[Poppins] min-h-screen text-black  relative flex flex-col justify-center items-center ">
       <h1 className=" text-2xl font-bold text-center py-4 ">Scholarship Listings</h1>
       <div className="absolute top-0 right-0 p-8">
                 <FaSearch />

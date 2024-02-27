@@ -10,7 +10,7 @@ interface ScholarProps {
 
 const ScholarComp: React.FC<ScholarProps> = ({ title, organization, location, description, onApply }) => {
     return (
-        <div className=' max-w-sm bg-[#92a4b182] rounded overflow-hidden shadow-lg
+        <div className=' max-w-sm bg-white/45 rounded overflow-hidden shadow-lg
         shadow-slate-600 m-4 w-72 h-64 px-2   '>
             <h2 className="text-xl font-bold mb-2">{title}</h2>
             <p className="text-gray-900 pb-2 text-sm">{organization} - {location}</p>

@@ -1,23 +1,25 @@
-import React from 'react';
-import Card from '../Components/homeCardProps';
+import React from "react";
+import Card from "../Components/homeCardProps";
 
 const App: React.FC = () => {
   return (
     <div className=" flex flex-wrap justify-center ">
-      <Card 
-        title="JOBS" 
-        content="This is the content of the first card." 
-        // imageUrl="/resume.svg" 
+      <Card
+        title="Jobs"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+        linkUrl="/Jobs"
+        
       />
-      <Card 
-         title="SCHOLARSHIPS" 
-         content="This is the content of the first card." 
-        //  imageUrl="/educator.svg" 
+      <Card
+        title="Scholarships"
+        content=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+        linkUrl="/Scholarships"
+        
       />
-      <Card 
-         title="INTERNSHIPS" 
-         content="This is the content of the first card." 
-        //  imageUrl="/brainstorming.svg" 
+      <Card
+        title="Internships"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+        linkUrl="/Internships"
       />
     </div>
   );
