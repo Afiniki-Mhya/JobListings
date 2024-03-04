@@ -2,11 +2,12 @@
 import React, { useMemo } from "react";
 import JobComp from "../Jobs/jobComp";
 import { FaSearch } from "react-icons/fa";
-import { useCollection, } from "react-firebase-hooks/firestore";
+import { useCollection } from "react-firebase-hooks/firestore";
 import { firestore } from "../Admin/Firebase/config";
-import { collection, addDoc ,where, query} from "firebase/firestore";
-import { collectionData, } from "../../../lib/zod";
+import { collection, addDoc, where, query } from "firebase/firestore";
+import { collectionData } from "../../../lib/zod";
 import { z } from "zod";
+import { FadeLoader } from "react-spinners";
 
 function JobPage() {
   function handleApply(): void {
@@ -14,21 +15,26 @@ function JobPage() {
   }
   const itemsRef = collection(firestore, "entries");
   const q = query(itemsRef, where("type", "==", "Job"));
-  const [_collection] = useCollection(q);
+  const [_collection, loading] = useCollection(q);
 
-
-  const data=useMemo(() => {
-    return z.array(collectionData).parse(_collection?.docs.map((doc) => doc.data())??[])
-  }, [_collection?.size])
+  const data = useMemo(() => {
+    return z
+      .array(collectionData)
+      .parse(_collection?.docs.map((doc) => doc.data()) ?? []);
+  }, [_collection?.size]);
   return (
-    <div className="bg-[#92A4B1] min-h-screen text-black  relative flex flex-col justify-center items-center ">
-      <h1 className="text-4xl   font-bold text-center py-4 ">Job Listings</h1>
+    <div className="bg-[#92A4B1] min-h-screen text-black  relative flex flex-col -center items-center ">
+      <h1 className="text-4xl  font-bold text-center py-4 mt-5">Job Listings</h1>
       <div className="absolute top-0 right-0 p-8">
         <FaSearch />
       </div>
-      <div className="grid grid-cols-3 gap-6 py-10">
-        {
-          data?.map(res=>{
+      {loading ? (
+        <div className="h-[80dvh] flex items-center justify-center">
+          <FadeLoader />
+        </div>
+      ) : (
+        <div className="grid grid-cols-3 gap-6 py-10">
+          {data?.map((res) => {
             return (
               <JobComp
                 title={res?.title}
@@ -39,9 +45,9 @@ function JobPage() {
                 jobLink={res?.url!}
               />
             );
-          })
-        }
-      </div>
+          })}
+        </div>
+      )}
     </div>
   );
 }
