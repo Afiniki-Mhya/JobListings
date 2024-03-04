@@ -12,10 +12,10 @@ export default function Home() {
         </div>
 
         {/* IMAGE */}
-        <div className="  pb-4 ">
-          <div className=" flex flex-row gap-48 justify-center items-center ">
+        <div className="  pb-4 p-2">
+          <div className=" flex  flex-col-reverse sm:flex-row  md:gap-48 justify-center items-center ">
             <div className=" flex flex-col ">
-              <h1 className=" font-extrabold text-5xl pt-4 pb-4  ">
+              <h1 className=" font-extrabold text-3xl sm:text-5xl md:pt-4 md:pb-4  ">
                 Find your <br></br> career path
               </h1>
               <p>
@@ -23,7 +23,7 @@ export default function Home() {
                 typesetting industry.
               </p>
             </div>
-            <img src="works.jpg" width="40%" className="rounded-full"></img>
+            <img src="works.jpg" width="40%" className="sm:rounded-full w-full rounded-md sm:w-fit "></img>
           </div>
         </div>
 
