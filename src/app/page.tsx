@@ -8,7 +8,7 @@ export default function Home() {
     <main className="bg-gradient-to-r from-red-600 to-violet-600  min-h-screen text-black  flex justify-center  ">
       <div className="bg-white/70 backdrop:blur m-10 w-3/4 rounded-xl ">
         <div className=" flex flex-row justify-between p-3  ">
-          <h1 className=" font-bold text-lg pl-16 ">JOBLISTINGS</h1>
+          <h1 className=" font-bold text-2xl pl-16 cursor-pointer ">JOBLISTINGS</h1>
         </div>
 
         {/* IMAGE */}
