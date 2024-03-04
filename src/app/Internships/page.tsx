@@ -8,7 +8,7 @@ function InternshipPage() {
   }
 
   return (
-    <div className=" bg-[#92A4B1] min-h-screen text-black font-[Poppins] relative flex flex-col justify-center items-center ">
+    <div className=" bg-[#92A4B1] min-h-screen text-black  relative flex flex-col justify-center items-center ">
       <h1 className=" text-2xl font-bold text-center py-4 ">
         Internship Listings
       </h1>

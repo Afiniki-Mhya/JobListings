@@ -5,16 +5,15 @@ const App: React.FC = () => {
   return (
     <div className=" flex flex-wrap justify-center ">
       <Card
+        className=""
         title="Jobs"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         linkUrl="/Jobs"
-        
       />
       <Card
         title="Scholarships"
         content=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         linkUrl="/Scholarships"
-        
       />
       <Card
         title="Internships"
