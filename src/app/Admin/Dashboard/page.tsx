@@ -15,7 +15,7 @@ function DashboadPage() {
   };
 
   return (
-    <div className="bg-[#92A4B1] min-h-screen text-black font-[Poppins] p-16">
+    <div className="bg-[#92A4B1] min-h-screen text-black  p-16">
       <h1 className="font-extrabold text-2xl pb-7">Hello Ismail</h1>
       <button
         onClick={handleUploadClick}
