@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Akatab as Inter } from "next/font/google";
 import "./globals.css";
+import QueryProvider from "./Components/queryProvider";
 
 const inter = Inter({ subsets: ["latin"], weight: ["400","500","600","700","800"] });
 
@@ -16,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <QueryProvider>
+        <body className={inter.className}>{children}</body>
+      </QueryProvider>
     </html>
   );
 }
