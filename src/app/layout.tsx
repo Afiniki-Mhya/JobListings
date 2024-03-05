@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Akatab as Inter } from "next/font/google";
+import { Advent_Pro as Inter } from "next/font/google";
 import "./globals.css";
 import QueryProvider from "./Components/queryProvider";
 
