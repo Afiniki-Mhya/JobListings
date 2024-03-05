@@ -48,9 +48,14 @@ const FormPage: React.FC = () => {
   }, [isPending]);
   useEffect(() => {
     setError(status == "error");
+<<<<<<< HEAD
   }, [status, error]);
+=======
+  }, [status,error]);
+  console.log({error})
+>>>>>>> 04f9f4e2fe3290bf62848bdaa6480bd3ae7e73c7
   return (
-    <div className="bg-white rounded-xl container mx-auto flex md:items-center justify-center h-screen">
+    <div className="font-sans bg-white rounded-xl container mx-auto flex md:items-center justify-center h-screen">
       <CommandDialog open={open} setOpen={setOpen}>
         <div className="flex items-center justify-center min-h-[20rem] flex-col gap-4 text-lg">
           <BeatLoader size={30} />
@@ -88,6 +93,19 @@ const FormPage: React.FC = () => {
               className="title w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
               type="text"
               placeholder="Title"
+            />
+          </div>
+          <div className="mb-4">
+            <input
+              // value={data?.title}
+              onChange={(e) => {
+                setData({ ...data, company: e?.target?.value });
+              }}
+              required
+              name="company"
+              className="company w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+              type="text"
+              placeholder="Company or Institution"
             />
           </div>
           <div className="mb-4">
