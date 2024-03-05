@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { BiRightArrow } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
@@ -20,13 +21,13 @@ const Card: React.FC<CardProps> = ({ title, content, linkUrl, className }) => {
       {content && <p className="text-white  pb-5 relative ">{content}</p>}
       <div className="px-2 font-sans text-white transition-colors hover:text-gray-900  cursor-pointer relative before:absolute before:opacity-0 before:rounded before:hover:opacity-100 before:bg-white before:bottom-0 before:left-0 before:h-full before:w-full before:origin-left before:scale-x-[0] hover:before:scale-x-100 before:transition-transform before:ease-in-out before:duration-500">
         {linkUrl ? (
-          <a
+          <Link
             href={linkUrl}
             className=" relative  mb-2 flex justify-between w-fit mx-auto items-center gap-5 "
           >
             {title}{" "}
             <BiRightArrow className="text-sm  duration-500" />
-          </a>
+          </Link>
         ) : (
           <div className="font-extrabold text-white text-xl mb-2 ">{title}</div>
         )}
