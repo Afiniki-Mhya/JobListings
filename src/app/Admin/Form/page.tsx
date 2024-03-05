@@ -30,7 +30,6 @@ const FormPage: React.FC = () => {
     e.preventDefault();
     const doc = collectionData?.parse(data);
     await addDoc(collection(firestore, "entries"), doc);
-    console.log("done");
     setData({
       state: "Abia",
       type: "Job",
@@ -80,7 +79,7 @@ const FormPage: React.FC = () => {
         <form onSubmit={mutate} className="md:grid md:grid-cols-2 gap-4">
           <div className="mb-4">
             <input
-              value={data?.title}
+              // value={data?.title}
               onChange={(e) => {
                 setData({ ...data, title: e?.target?.value });
               }}
@@ -93,7 +92,7 @@ const FormPage: React.FC = () => {
           </div>
           <div className="mb-4">
             <input
-              value={data?.address}
+              // value={data?.address}
               onChange={(e) => {
                 setData({ ...data, address: e?.target?.value });
               }}
@@ -124,7 +123,7 @@ const FormPage: React.FC = () => {
           </div>
           <div className="mb-4">
             <input
-              value={data?.url}
+              // value={data?.url}
               onChange={(e) => {
                 setData({ ...data, url: e?.target?.value });
               }}
@@ -154,7 +153,7 @@ const FormPage: React.FC = () => {
           </div>
           <div className="mb-4 col-span-2">
             <textarea
-              value={data?.description}
+              // value={data?.description}
               onChange={(e) => {
                 setData({ ...data, description: e?.target?.value });
               }}
