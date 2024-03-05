@@ -17,12 +17,21 @@ function DashboadPage() {
   return (
     <div className="bg-[#92A4B1] min-h-screen text-black  p-16">
       <h1 className="font-extrabold text-2xl pb-7">Hello Ismail</h1>
-      <button
-        onClick={handleUploadClick}
-        className="bg-white p-4 rounded-lg cursor-pointer"
-      >
-        Upload
-      </button>
+      <div className=" flex gap-4 ">
+        <Link
+        href={"/Admin/Form"}
+          // onClick={handleUploadClick}
+          className="bg-white p-4 rounded-lg cursor-pointer"
+        >
+          Upload
+        </Link>
+        <Link
+        href={'/'}
+          className="bg-white p-4 rounded-lg cursor-pointer"
+        >
+          View Activities
+        </Link>
+      </div>
       {isUploadOpen && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-700 bg-opacity-50">
           <div className=" p-8 rounded-lg">

@@ -29,7 +29,7 @@ const SignUp = () => {
       <div className="flex flex-col md:flex-row  gap-4 bg-white rounded-md m-4 md:m-8 shadow-md w-full md:w-2/3 shadow-[#2d2c2c]">
         <div className="w-full md:w-3/5 p-3">
           {/* COMPANY LOGO */}
-          <h1 className="text-xl md:text-2xl font-bold">N@sh Digital</h1>
+          <h1 className="text-xl md:text-2xl font-bold">JobListings</h1>
           <div className="flex flex-col justify-center items-center py-8">
             <h1 className="text-center text-sm mb-3">Sign in to Account</h1>
             <div className="border-2 w-10 border-black item-center mb-4 rounded-sm"></div>
@@ -82,8 +82,7 @@ const SignUp = () => {
           <p className="text-lg md:text-2xl font-bold mb-2">Hello, Friend!</p>
           <div className="border-2 w-10 border-white item-center mb-4 rounded-sm"></div>
           <p className="text-center text-sm">
-            Fill up your personal information and start an exciting journey with
-            us.
+            Fill up your personal information and begin your journey with.
           </p>
         </div>
       </div>

@@ -48,7 +48,7 @@ const FormPage: React.FC = () => {
   }, [isPending]);
   useEffect(() => {
     setError(status == "error");
-  }, [status,error]);
+  }, [status, error]);
   return (
     <div className="bg-white rounded-xl container mx-auto flex md:items-center justify-center h-screen">
       <CommandDialog open={open} setOpen={setOpen}>
