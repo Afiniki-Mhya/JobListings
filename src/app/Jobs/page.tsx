@@ -24,7 +24,9 @@ function JobPage() {
   }, [_collection?.size]);
   return (
     <div className="bg-[#92A4B1] min-h-screen text-black  relative flex flex-col -center items-center ">
-      <h1 className="text-4xl  font-bold text-center py-4 mt-5">Job Listings</h1>
+      <h1 className="text-4xl  font-bold text-center py-4 mt-5">
+        Job Listings
+      </h1>
       <div className="absolute top-0 right-0 p-8">
         <FaSearch />
       </div>
@@ -34,9 +36,10 @@ function JobPage() {
         </div>
       ) : (
         <div className="grid grid-cols-3 gap-6 py-10">
-          {data?.map((res) => {
+          {data?.map((res, key) => {
             return (
               <JobComp
+                key={key}
                 title={res?.title}
                 company={res?.company}
                 location={res?.address!}
