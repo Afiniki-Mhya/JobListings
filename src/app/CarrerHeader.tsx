@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 function CarrerHeader() {
   return (
     <>
-    Find your
+      Find your
       <br></br>
       <Typewriter
         onInit={(typewriter) => {
@@ -27,6 +27,9 @@ function CarrerHeader() {
             // })
             .pauseFor(2500)
             .start();
+        }}
+        options={{
+          loop: true,
         }}
       />{" "}
     </>
