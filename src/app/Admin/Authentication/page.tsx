@@ -4,10 +4,12 @@ import { BsEnvelope } from "react-icons/bs";
 import { MdPassword } from "react-icons/md";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "@/app/Admin/Firebase/config";
+import { useRouter } from "next/navigation";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter()
 
   const [createUserWithEmailAndPassword] =
     useCreateUserWithEmailAndPassword(auth);
@@ -18,6 +20,7 @@ const SignUp = () => {
       console.log({ res });
       setEmail("");
       setPassword("");
+      router.push("Admin/Dashboard")
     } catch (e){
       console.error(e)
     }
@@ -82,7 +85,7 @@ const SignUp = () => {
           <p className="text-lg md:text-2xl font-bold mb-2">Hello, Friend!</p>
           <div className="border-2 w-10 border-white item-center mb-4 rounded-sm"></div>
           <p className="text-center text-sm">
-            Fill up your personal information and begin your journey with.
+            Fill up your personal information and begin your journey.
           </p>
         </div>
       </div>

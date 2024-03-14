@@ -48,12 +48,8 @@ const FormPage: React.FC = () => {
   }, [isPending]);
   useEffect(() => {
     setError(status == "error");
-<<<<<<< HEAD
   }, [status, error]);
-=======
-  }, [status,error]);
-  console.log({error})
->>>>>>> 04f9f4e2fe3290bf62848bdaa6480bd3ae7e73c7
+  console.log({ error });
   return (
     <div className="font-sans bg-white rounded-xl container mx-auto flex md:items-center justify-center h-screen">
       <CommandDialog open={open} setOpen={setOpen}>
