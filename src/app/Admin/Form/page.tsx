@@ -49,7 +49,6 @@ const FormPage: React.FC = () => {
   useEffect(() => {
     setError(status == "error");
   }, [status, error]);
-  console.log({ error });
   return (
     <div className="font-sans bg-white rounded-xl container mx-auto flex md:items-center justify-center h-screen">
       <CommandDialog open={open} setOpen={setOpen}>
