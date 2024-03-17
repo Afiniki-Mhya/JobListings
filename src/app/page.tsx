@@ -15,7 +15,7 @@ export default function Home() {
 
         {/* IMAGE */}
         <div className="  pb-4 p-2">
-          <div className=" flex  flex-col-reverse sm:flex-row  md:gap-48 justify-center items-center ">
+          <div className=" flex  flex-col-reverse sm:flex-row md:gap-48 justify-center items-center ">
             <div className=" flex flex-col ">
               <h1 className=" font-extrabold text-3xl sm:text-5xl md:pt-4 md:pb-4  ">
                 <CarrerHeader />
@@ -41,4 +41,3 @@ export default function Home() {
     </main>
   );
 }
-

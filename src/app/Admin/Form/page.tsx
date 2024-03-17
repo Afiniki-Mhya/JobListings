@@ -164,7 +164,7 @@ const FormPage: React.FC = () => {
               <option value="Scholarship">Scholarship</option>
             </select>
           </div>
-          <div className="mb-4 col-span-2">
+          <div className="mb-4 mt-4 col-span-2">
             <textarea
               // value={data?.description}
               onChange={(e) => {

@@ -35,7 +35,7 @@ function ScholarshipPage() {
           <FadeLoader />
         </div>
       ) : (
-        <div className="grid grid-cols-3 gap-6 py-10">
+        <div className="grid grid-cols-3 gap-6 py-10 sm:grid sm:grid-cols-3">
           {data?.map((res, key) => {
             return (
               <JobComp

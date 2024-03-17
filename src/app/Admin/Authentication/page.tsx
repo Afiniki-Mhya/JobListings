@@ -27,16 +27,14 @@ const SignUp = () => {
   };
 
   return (
-    <div className="bg-[#d8dade] min-h-screen pl-56 bg-contain w-full flex flex-col flex-1 justify-center">
-      {/* THE SIGN IN TEXT FIELDS SECTION */}
-      <div className="flex flex-col md:flex-row  gap-4 bg-white rounded-md m-4 md:m-8 shadow-md w-full md:w-2/3 shadow-[#2d2c2c]">
-        <div className="w-full md:w-3/5 p-3">
-          {/* COMPANY LOGO */}
-          <h1 className="text-xl md:text-2xl font-bold">JobListings</h1>
-          <div className="flex flex-col justify-center items-center py-8">
-            <h1 className="text-center text-sm mb-3">Sign in to Account</h1>
-            <div className="border-2 w-10 border-black item-center mb-4 rounded-sm"></div>
-          </div>
+    <div className="bg-[#d8dade] min-h-screen flex flex-col items-center justify-center">
+  <div className="flex flex-col gap-4 bg-white rounded-md m-4 md:m-8 shadow-md md:w-2/3 shadow-[#2d2c2c]">
+    <div className="w-full p-3">
+      <h1 className="text-xl md:text-2xl font-bold text-center">JobListings</h1>
+      <div className="flex flex-col justify-center items-center py-8">
+        <h1 className="text-center text-sm mb-3">Sign in to Account</h1>
+        <div className="border-2 w-10 border-black item-center mb-4 rounded-sm"></div>
+      </div>
           {/* THE SIGN IN TEXT FIELDS */}
           <div className="flex flex-col gap-4 items-center justify-center">
             {/* EMAIL TEXT FIELD */}

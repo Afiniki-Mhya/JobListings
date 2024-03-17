@@ -23,7 +23,7 @@ function JobPage() {
       .parse(_collection?.docs.map((doc) => doc.data()) ?? []);
   }, [_collection?.size]);
   return (
-    <div className="bg-[#92A4B1] min-h-screen text-black  relative flex flex-col -center items-center ">
+    <div className="bg-[#92A4B1] min-h-screen text-black  relative flex flex-col -center items-center  ">
       <h1 className="text-4xl  font-bold text-center py-4 mt-5">
         Job Listings
       </h1>
@@ -35,7 +35,7 @@ function JobPage() {
           <FadeLoader />
         </div>
       ) : (
-        <div className="grid grid-cols-3 gap-6 py-10">
+        <div className="grid grid-cols-1 gap-6 py-10 sm:grid sm:grid-cols-3">
           {data?.map((res, key) => {
             return (
               <JobComp
