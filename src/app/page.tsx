@@ -5,7 +5,7 @@ import App from "./Cards/page";
 import CarrerHeader from "./CarrerHeader";
 export default function Home() {
   return (
-    <main className="bg-gradient-to-r from-red-600 to-violet-600  min-h-screen text-black  flex justify-center  ">
+    <main className="bg-gradient-to-br from-[#5A7480] via-[#3C5665] to-[#1E2025]  min-h-screen text-black  flex justify-center  ">
       <div className="bg-white/70 backdrop:blur m-10 w-3/4 rounded-xl ">
         <div className=" flex flex-row justify-between p-3  ">
           <h1 className=" font-bold text-2xl pl-16 cursor-pointer ">
